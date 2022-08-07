@@ -8,6 +8,16 @@ $(document).ready(function () {
         }else {
             $(".navbar").removeCloss("sticky");
         }
+
+        // Scrolling Button btn
+
+        if(this.scrollY > 500){
+            $('.scroll-up-btn'.addClass("show"));
+        }else {
+            $('.scroll-up-btn'.removeCloss("show"));
+        }
+
+
     });
     
     var typed = new Typed (".typing-1", {
