@@ -12,14 +12,19 @@ $(document).ready(function () {
         // Scrolling Button btn
 
         if(this.scrollY > 500){
-            $('.scroll-up-btn'.addClass("show"));
+            $('.scroll-up-btn').addClass("show");
         }else {
-            $('.scroll-up-btn'.removeCloss("show"));
+            $('.scroll-up-btn').removeCloss("show");
         }
 
-
     });
-    
+
+    //Slide-up script
+    $('.scroll-up-btn').click(function () {
+        $('html').animate({scrollTop:0});
+    });
+
+    // Typing effects
     var typed = new Typed (".typing-1", {
         strings: [
             "Developer", "Designer", "Web Developer"
